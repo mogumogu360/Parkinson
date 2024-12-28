@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static\predict.css">
+    <title>prediction</title>
+</head>
+
+<body>
+    <h1>PREDICTION OF PARKINSON'S DISEASE</h1>
+    <form method="post" action="{{url_for('predict')}}">
+        <label for="patient_id">Patient ID</label>
+        <input type="text" id="patient_id" name="patient_id" required>
+        <br>
+        <label for="patient_name">Patient Name</label>
+        <input type="text" id="patient_name" name="patient_name" required>
+        <br>
+        <label for="c1">MDVP:Fo(Hz)</label>
+        <input type="text" id="c1" name="c1" required>
+        <br>
+        <label for="c2">MDVP:Fhi(Hz)</label>
+        <input type="text" id="c2" name="c2" required>
+        <br>
+        <label for="c3">MDVP:Flo(Hz)</label>
+        <input type="text" id="c3" name="c3" required>
+        <br>
+        <label for="c4">MDVP:Jitter(%)</label>
+        <input type="text" id="c4" name="c4" required>
+        <br>
+        <label for="c5">MDVP:Jitter(Abs)</label>
+        <input type="text" id="c5" name="c5" required>
+        <br>
+        <label for="c6">MDVP:RAP</label>
+        <input type="text" id="c6" name="c6" required>
+        <br>
+        <label for="c7">MDVP:PPQ</label>
+        <input type="text" id="c7" name="c7" required>
+        <br>
+        <label for="c8">Jitter:DDP</label>
+        <input type="text" id="c8" name="c8" required>
+        <br>
+        <label for="c9">MDVP:Shimmer</label>
+        <input type="text" id="c9" name="c9" required>
+        <br>
+        <label for="c10">MDVP:Shimmer(dB)</label>
+        <input type="text" id="c10" name="c10" required>
+        <br>
+        <label for="c11">Shimmer:APQ3</label>
+        <input type="text" id="c11" name="c11" required>
+        <br>
+        <label for="c12">Shimmer:APQ5</label>
+        <input type="text" id="c12" name="c12" required>
+        <br>
+        <label for="c13">MDVP:APQ</label>
+        <input type="text" id="c13" name="c13" required>
+        <br>
+        <label for="c14">Shimmer:DDA</label>
+        <input type="text" id="c14" name="c14" required>
+        <br>
+        <label for="c15">NHR</label>
+        <input type="text" id="c15" name="c15" required>
+        <br>
+        <label for="c16">HNR</label>
+        <input type="text" id="c16" name="c16" required>
+        <br>
+        <label for="c17">RPDE</label>
+        <input type="text" id="c17" name="c17" required>
+        <br>
+        <label for="c18">DFA</label>
+        <input type="text" id="c18" name="c18" required>
+        <br>
+        <label for="c19">Spread1</label>
+        <input type="text" id="c19" name="c19" required>
+        <br>
+        <label for="c20">Spread2</label>
+        <input type="text" id="c20" name="c20" required>
+        <br>
+        <label for="c21">D2</label>
+        <input type="text" id="c21" name="c21" required>
+        <br>
+        <label for="c22">PPE</label>
+        <input type="text" id="c22" name="c22" required>
+        <br>
+
+        <button type="submit">PREDICT</button>
+    </form>
+</body>
+
+</html>
